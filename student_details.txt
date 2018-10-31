@@ -1,0 +1,37 @@
+CREATE TABLE student_details(
+	id VARCHAR(10) NOT NULL,
+	name VARCHAR(30) NOT NULL,
+	house CHAR(6) NOT NULL,
+	grade INT NOT NULL,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0001', 'Mandy Willis', 'Kamal', 9);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0002', 'John Doe', 'Vishal', 8);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0003', 'Nicholas Dixon', 'Nihal', 10);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0004', 'John Smith', 'Nihal', 12);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0005', 'Lee Abbot', 'Kamal', 8);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0006', 'George Costanza', 'Vishal', 10);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0007', 'Chester McCoy', 'Nihal', 9);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0008', 'Brandi Grant', 'Vishal', 11);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0009', 'Christie Craig', 'Kamal', 10);
+
+INSERT INTO student_details(id, name, house, grade)
+VALUES ('S0010', 'Carlos Brathwaite', 'Nihal', 12);
