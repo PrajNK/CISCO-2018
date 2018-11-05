@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login Page</title>
+
+<style>
+ /* Bordered form */
+body 
+{
+    border: 10px solid blue;
+    padding:10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 10px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) 
+{
+    span.psw 
+    {
+        display: block;
+        float: none;
+    }
+    .cancelbtn 
+    {
+        width: 100%;
+    }
+} 
+</style>
+</head>
+<body bgcolor="#E6E6FA">
+    
+        <center><img src="http://nafl.in/images/nafl_logo.png" width="40%"></center>
+        <h1 style="font-size: 60px;font-family: fantasy;color: royalblue;"><center>VOTING SYSTEM</center></h1>
+        <h3>I am a:</h3>
+        <select>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+        </select>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            
+            <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+        <p>
+            <marquee scrollamount="25" behavior="alternate"><h2 style="font-size:30px;font-family: cursive;color: royalblue">Aspire Achieve Excel</marquee></h2>
+            <link rel="stylesheet" href="2.css" />
+    </body>
+</html>
