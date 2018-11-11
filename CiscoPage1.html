@@ -72,6 +72,14 @@ span.psw {
     }
 } 
 </style>
+<script type="text/javascript">
+    function assignValue()
+    {
+    var userType = document.getElementById("uType");
+    var userName = document.getElementById("uName");
+    var passWord = document.getElementById("pWord");
+    }
+</script>
 </head>
 <body bgcolor="#E6E6FA">
     
@@ -90,7 +98,7 @@ span.psw {
             <label for="psw"><b>Password</b></label>
             <input id="pWord" type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" onclick="assignValue()">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me>
             </label>
@@ -103,10 +111,5 @@ span.psw {
         <p>
             <marquee scrollamount="25" behavior="alternate"><h2 style="font-size:30px;font-family: cursive;color: royalblue">Aspire Achieve Excel</h2></marquee>
         </p>
-            <script type="text/javascript">
-            var userType = document.getElementById("uType");
-            var userName = document.getElementById("uName");
-            var passWord = document.getElementById("pWord");
-            </script>
     </body>
 </html>
