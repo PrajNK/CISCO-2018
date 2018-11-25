@@ -12,6 +12,7 @@
         <select>
             <option value="Student">Student</option>
             <option value="Teacher">Teacher</option>
+            <option value="Admin">Admin</option>
         </select>
         <div class="container">
             <label for="uname"><i><b>Username</b></label></i>
