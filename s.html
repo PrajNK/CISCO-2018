@@ -9,6 +9,20 @@
             padding:10px;
             background-color:rgb(230,230,250);
         }
+        button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        margin:25px;
+        }
+
+        button:hover {
+        opacity: 0.8;
+        }
         </style>
     </head>
     <body>
@@ -45,29 +59,29 @@
             }
         </script>
         <center>
-            <table style="width:100%">
+            <table style="width:50%; padding:25px;">
                 <tr>
                   <th>BOYS</th>
                   <th>GIRLS</th> 
                 </tr>
                 <tr>
-                    <center><td id="bCapt1"><img src="" alt="Boy Captain 1"></td></center>
-                    <center><td id="gCapt1"><img src="" alt="Girl Captain 1"></td></center>  
+                    <center><td id="bCapt1"><input type="image" src="" alt="Boy Captain 1" style="padding:10px"></td></center>
+                    <center><td id="gCapt1"><input type="image" src="" alt="Girl Captain 1" style="padding:10px"></td></center>  
                 </tr>
                 <tr>
-                    <center><td id="bCapt2"><img src="" alt="Boy Captain 2"></td></center>
-                    <center><td id="gCapt2"><img src="" alt="Girl Captain 2"></td></center>
+                    <center><td id="bCapt2"><input type="image" src="" alt="Boy Captain 2" style="padding:10px"></td></center>
+                    <center><td id="gCapt2"><input type="image" src="" alt="Girl Captain 2" style="padding:10px"></td></center>
                 </tr>
                 <tr>
-                    <center><td id="bCapt3"><img src="" alt="Boy Captain 3"></td></center>
-                    <center><td id="gCapt3"><img src="" alt="Girl Captain 3"></td></center>
+                    <center><td id="bCapt3"><input type="image" src="" alt="Boy Captain 3" style="padding:10px"></td></center>
+                    <center><td id="gCapt3"><input type="image" src="" alt="Girl Captain 3" style="padding:10px"></td></center>
                 </tr>
                 <tr>
-                    <center><td id="bCapt4"><img src="" alt="Boy Captain 4"></td></center>
-                    <center><td id="gCapt4"><img src="" alt="Girl Captain 4"></td></center>
+                    <center><td id="bCapt4"><input type="image" src="" alt="Boy Captain 4" style="padding:10px"></td></center>
+                    <center><td id="gCapt4"><input type="image" src="" alt="Girl Captain 4" style="padding:10px"></td></center>
                 </tr>
             </table>
         </center>
-        <button type="submit" onclick="assignValue()">Submit</button>
+        <center><button type="submit" onclick="assignValue()">Submit</button></center>
     </body>
 </html>
