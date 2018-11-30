@@ -94,10 +94,6 @@ span.psw {
             <center><button type="submit" onclick="assignValue()">Login</button></center>
         </div>
 
-        <div class="container" style="background-color:#f1f1f1">
-            
-            <span class="psw"><a href="#">Forgot password?</a></span>
-        </div>
         <p>
             <marquee scrollamount="15" behavior="alternate"><h2 style="font-size:30px;font-family: cursive;color: royalblue">Aspire Achieve Excel</h2></marquee>
         </p>
