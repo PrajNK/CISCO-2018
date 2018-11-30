@@ -92,9 +92,6 @@ span.psw {
             <input id="pWord" style="width:50%;" type="password" placeholder="Enter Password" name="psw" required>
 
             <center><button type="submit" onclick="assignValue()">Login</button></center>
-            <label>
-                <input type="checkbox" style="width:50%;" checked="checked" name="remember"> Remember me>
-            </label>
         </div>
 
         <div class="container" style="background-color:#f1f1f1">
@@ -102,7 +99,7 @@ span.psw {
             <span class="psw"><a href="#">Forgot password?</a></span>
         </div>
         <p>
-            <marquee scrollamount="25" behavior="alternate"><h2 style="font-size:30px;font-family: cursive;color: royalblue">Aspire Achieve Excel</h2></marquee>
+            <marquee scrollamount="15" behavior="alternate"><h2 style="font-size:30px;font-family: cursive;color: royalblue">Aspire Achieve Excel</h2></marquee>
         </p>
         <script type="text/javascript">
             function assignValue()
