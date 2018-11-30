@@ -72,12 +72,12 @@ span.psw {
         width: 100%;
     }
 } 
+
 </style>
 </head>
-<body>
-    
+<body>  
+        <h1 style="font-size: 50px;font-family: fantasy;color: black;"><center>VOTING SYSTEM</center></h1>
         <center><img src="http://nafl.in/images/nafl_logo.png" width="40%"></center>
-        <h1 style="font-size: 50px;font-family: fantasy;color: royalblue;"><center>VOTING SYSTEM</center></h1>
         <h3>&nbsp;&nbsp;&nbsp;I am a&nbsp;:</h3>
         <select id="uType">
             <option value="Student">&nbsp;Student</option>
@@ -90,7 +90,7 @@ span.psw {
             </p>
             <label for="psw"><b>Password</b></label><br>
             <input id="pWord" style="width:50%;" type="password" placeholder="Enter Password" name="psw" required>
-
+            <p>
             <center><button type="submit" onclick="assignValue()">Login</button></center>
         </div>
 
