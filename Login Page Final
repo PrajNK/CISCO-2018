@@ -4,28 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <title>Login Page</title>
-
 <style>
- /* Bordered form */
 body 
 {
-    border: 10px solid blue;
+    border: 10px solid #24506C;
     padding:10px;
-    background-color:rgb(230,230,250);
+    background-color:rgb(242, 242, 249);
 }
 
-/* Full-width inputs */
 input[type=text], input[type=password] 
 {
-    width: 100%;
+    width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px sold #ccc;
     box-sizing: border-box;
 }
-
-/* Set a style for all buttons */
 button {
     background-color: #4CAF50;
     color: white;
@@ -33,70 +28,47 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 50%;
+    width: 10%;
 }
-
-/* Add a hover effect for buttons */
 button:hover {
     opacity: 0.8;
 }
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Add padding to containers */
 .container {
     padding: 10px;
+    width: 50%;
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
-
-/* The "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) 
-{
-    span.psw 
-    {
-        display: block;
-        float: none;
-    }
-    .cancelbtn 
-    {
-        width: 100%;
-    }
-} 
-
 </style>
 </head>
 <body>  
+        <div class="limiter">
+        <div class="containerlogin100" style="background-image: url('images/bg-01.jpg');">
+        <div class="wraplogin100" p-l-55 p-r-55 p-t-65 p-b-54>
+        </div></div></div>
         <h1 style="font-size: 50px;font-family: fantasy;color: black;"><center>VOTING SYSTEM</center></h1>
         <center><img src="http://nafl.in/images/nafl_logo.png" width="40%"></center>
-        <h3>&nbsp;&nbsp;&nbsp;I am a&nbsp;:</h3>
-        <select id="uType">
+        <center><h3>&nbsp;I am a&nbsp;:</h3></center>
+        <center><select id="uType">
             <option value="Student">&nbsp;Student</option>
             <option value="Teacher">&nbsp;Teacher</option>
             <option value="Admin">&nbsp;Admin</option>
-        </select>
+        </center></select>
         <div class="container">
-            <p><label for="uname"><b>Username</b></label><br>
-            <input id="uName"  style="width:50%;" type="text" placeholder="Enter Username" name="uname" required>
+            <center><p><label for="uname"><b>User ID</b></label><br></center>
+            <center><input id="uName"  style="width:50%;" type="text" placeholder="Enter Username" name="uname" required></center>
             </p>
-            <label for="psw"><b>Password</b></label><br>
-            <input id="pWord" style="width:50%;" type="password" placeholder="Enter Password" name="psw" required>
+            <center><label for="psw"><b>Password</b></label><br></center>
+            <center><input id="pWord" style="width:50%;" type="password" placeholder="Enter Password" name="psw" required></center>
+            </div>
             <p>
             <center><button type="submit" onclick="assignValue()">Login</button></center>
+            </p>
+        <div class="img">
+            <img src="http://www.freesignprinter.com/images/printable-vote-today-sign.jpg" width="20%">
         </div>
-
-
-        <p>
-            <marquee scrollamount="25" behavior="alternate"><h2 style="font-size:30px;font-family: cursive;color: royalblue">Aspire Achieve Excel</h2></marquee>
+            <marquee><h2 style="font-size:30px;font-family: SFS, Arial, sans-serif;color: #24506C">Aspire Achieve Excel</h2></marquee>
         </p>
         <script type="text/javascript">
             function assignValue()
