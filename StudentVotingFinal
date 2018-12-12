@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="utf-8" />
+        <title>Student Voting Page</title>
+        <style>
+        body{
+            margin: 10px;
+            border: 10px black;
+            padding:10px;
+            background-color:rgb(230,230,250);
+        }
+           button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+        </style>
+    </head>
+    <body>
+        <center><img src="http://nafl.in/images/nafl_logo.png" width="40%" alt="NAFL"></center>
+        <center><h1 style="font-size: 60px;font-family: fantasy;color: royalblue;">Student Voting Page</h1></center>
+        <h3>Select Category:</h3>
+         <center><h2 style="font-size: 40px;" id="category"><p id="firstP">&nbsp;</p></h2></center>
+        <script>
+        function showData() 
+            {
+            var theSelect = SchoolHouse.category;
+            var firstP = document.getElementById('firstP');
+            firstP.innerHTML = theSelect[theSelect.selectedIndex].text;
+            }
+        function assignValue()
+            {
+            var BCapt1 = document.getElementById("bCapt1");
+            var GCapt1 = document.getElementById("gCapt1");
+            var BCapt2 = document.getElementById("bCapt2");
+            var GCapt2 = document.getElementById("gCapt2");
+            var BCapt3 = document.getElementById("bCapt3");
+            var GCapt3 = document.getElementById("gCapt3");
+            var BCapt4 = document.getElementById("bCapt4");
+            var GCapt2 = document.getElementById("gCapt4");
+            }
+        </script>
+        <center>
+            <table style="width:100%">
+                <tr>
+                  <th>BOYS</th>
+                  <th>GIRLS</th> 
+                </tr>
+                <tr>
+                    <center><td id="bCapt1"><img src="" alt="Boy Captain 1"></td></center>
+                    <center><td id="gCapt1"><img src="" alt="Girl Captain 1"></td></center> 
+                   <label>
+ 
+                </tr>
+                <tr>
+                    <center><td id="bCapt2"><img src="" alt="Boy Captain 2"></td></center>
+                    <center><td id="gCapt2"><img src="" alt="Girl Captain 2"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="bCapt3"><img src="" alt="Boy Captain 3"></td></center>
+                    <center><td id="gCapt3"><img src="" alt="Girl Captain 3"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="bCapt4"><img src="" alt="Boy Captain 4"></td></center>
+                    <center><td id="gCapt4"><img src="" alt="Girl Captain 4"></td></center>
+                </tr>
+            </table>
+        </center>
+        <button type="submit" onclick="assignValue()">Submit My Vote</button>
+        <marquee><h1>THANK YOU FOR VOTING</h1></marquee>
+    </body>
+</html>
