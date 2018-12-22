@@ -2,23 +2,40 @@
 <head lang="en">
 <meta charset="UTF-8">
 <title>Admin Page</title>
+<style>
+body{
+    border: 10px solid #24506C;
+    padding:10px;
+    background-color:rgb(242, 242, 249);
+}
+img{
+margin:8px;
+width:15%;
+position:relative;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+</style>
 </head>
 <body bgcolor="#87CEEB">
-<h1><u><center>RESULTS</h1></u></center>
+<h1><u><center>RESULTS</h1></u></center><br>
 <br>
-<script language="JavaScript">
-        function showInput() {
-            document.getElementById('display').innerHTML = 
-                        document.getElementById("user_input").value;
-        }
-      </script>
            <form>
-        <label><b>Enter house to display results</b></label>
-        <input type="text" name="message" id="user_input">
+        <h2><center><label><b>Enter house to display results</b></label></center></h2><br>
+        <center><input type="text" name="message" id="user_input"></center><br>
       </form>
-      <input type="submit" onclick="showInput();"><br/><p>
-      <label>The winners of the election are: </label>
-      <p><span id='display'></span></p>
+      <center><button type="submit" onclick="assignValue()">Submit</button></center>
+      <center><h3><label>The winners of the election are: </label></center></h3>
+<div class="img">
+            <img src="http://www.pack1776.com/wp-content/uploads/2010/01/WeAreAllWinners.gif" width="20%">
+        </div>
     </body>
     </html>
 </body>
