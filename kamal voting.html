@@ -1,0 +1,80 @@
+<html>
+   <head>
+       <meta charset="utf-8" />
+        <title>Kamal's Page</title>
+        <style>
+        body{
+            margin: 5px;
+            border: 10px solid goldenrod;
+            padding:10px;
+            background-color:yellow;
+        }
+        button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        margin:25px;
+        }
+
+        button:hover {
+        opacity: 0.8;
+        }
+        #captTable{
+            border:5px solid goldenrod;
+        }
+        </style>
+    </head>
+    <body>
+        <center><img src="http://nafl.in/images/nafl_logo.png" width="40%" alt="NAFL"></center>
+        <center><h1 style="font-size: 60px;font-family: fantasy;color: goldenrod;">Kamal House Voting Page</h1></center>
+         <center><h2 style="font-size: 40px;" id="category"><p id="firstP">&nbsp;</p></h2></center>
+        <script>
+        function showData() 
+            {
+            var theSelect = SchoolHouse.category;
+            var firstP = document.getElementById('firstP');
+            firstP.innerHTML = theSelect[theSelect.selectedIndex].text;
+            }
+        function assignValue()
+            {
+            var KamBCapt1 = document.getElementById("kamBCapt1");
+            var KamGCapt1 = document.getElementById("kamgCapt1");
+            var KamBCapt2 = document.getElementById("kambCapt2");
+            var KamGCapt2 = document.getElementById("kamgCapt2");
+            var KamBCapt3 = document.getElementById("kambCapt3");
+            var KamGCapt3 = document.getElementById("kamgCapt3");
+            var KamBCapt4 = document.getElementById("kambCapt4");
+            var KamGCapt2 = document.getElementById("kamgCapt4");
+            }
+        </script>
+        <center>
+            <table style="width:50%; padding:25px;" id="captTable">
+                <tr>
+                  <th>BOYS</th>
+                  <th>GIRLS</th> 
+                </tr>
+                <tr>
+                    <center><td id="kambCapt1"><input type="image" src="" alt="Kamal Boy Captain 1" style="padding:10px"></td></center>
+                    <center><td id="kamgCapt1"><input type="image" src="" alt="Kamal Girl Captain 1" style="padding:10px"></td></center>  
+                </tr>
+                <tr>
+                    <center><td id="kambCapt2"><input type="image" src="" alt="Kamal Boy Captain 2" style="padding:10px"></td></center>
+                    <center><td id="kamgCapt2"><input type="image" src="" alt="Kamal Girl Captain 2" style="padding:10px"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="kambCapt3"><input type="image" src="" alt="Kamal Boy Captain 3" style="padding:10px"></td></center>
+                    <center><td id="kamgCapt3"><input type="image" src="" alt="Kamal Girl Captain 3" style="padding:10px"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="kambCapt4"><input type="image" src="" alt="Kamal Boy Captain 4" style="padding:10px"></td></center>
+                    <center><td id="kamgCapt4"><input type="image" src="" alt="Kamal Girl Captain 4" style="padding:10px"></td></center>
+                </tr>
+            </table>
+        </center>
+        <center><button type="submit" onclick="assignValue()">Submit</button></center>
+    </body>
+</html>
