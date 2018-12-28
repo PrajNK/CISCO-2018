@@ -1,0 +1,80 @@
+<html>
+   <head>
+       <meta charset="utf-8" />
+        <title>Nihal's Page</title>
+        <style>
+        body{
+            margin: 5px;
+            border: 10px solid darkgreen;
+            padding:10px;
+            background-color:lightgreen;
+        }
+        button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        margin:25px;
+        }
+
+        button:hover {
+        opacity: 0.8;
+        }
+        #captTable{
+            border:5px solid darkgreen;
+        }
+        </style>
+    </head>
+    <body>
+        <center><img src="http://nafl.in/images/nafl_logo.png" width="40%" alt="NAFL"></center>
+        <center><h1 style="font-size: 60px;font-family: fantasy;color: darkgreen;">Vishal House Voting Page</h1></center>
+         <center><h2 style="font-size: 40px;" id="category"><p id="firstP">&nbsp;</p></h2></center>
+        <script>
+        function showData() 
+            {
+            var theSelect = SchoolHouse.category;
+            var firstP = document.getElementById('firstP');
+            firstP.innerHTML = theSelect[theSelect.selectedIndex].text;
+            }
+        function assignValue()
+            {
+            var NihBCapt1 = document.getElementById("nihbCapt1");
+            var NihGCapt1 = document.getElementById("nihgCapt1");
+            var NihBCapt2 = document.getElementById("nihbCapt2");
+            var NihGCapt2 = document.getElementById("nihgCapt2");
+            var NihBCapt3 = document.getElementById("nihbCapt3");
+            var NihGCapt3 = document.getElementById("nihgCapt3");
+            var NihBCapt4 = document.getElementById("nihbCapt4");
+            var NihGCapt4 = document.getElementById("nihgCapt4");
+            }
+        </script>
+        <center>
+            <table style="width:50%; padding:25px;" id="captTable">
+                <tr>
+                  <th>BOYS</th>
+                  <th>GIRLS</th> 
+                </tr>
+                <tr>
+                    <center><td id="nihbCapt1"><input type="image" src="" alt="Nihal Boy Captain 1" style="padding:10px"></td></center>
+                    <center><td id="nihgCapt1"><input type="image" src="" alt="Nihal Girl Captain 1" style="padding:10px"></td></center>  
+                </tr>
+                <tr>
+                    <center><td id="nihbCapt2"><input type="image" src="" alt="Nihal Boy Captain 2" style="padding:10px"></td></center>
+                    <center><td id="nihgCapt2"><input type="image" src="" alt="Nihal Girl Captain 2" style="padding:10px"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="nihbCapt3"><input type="image" src="" alt="Nihal Boy Captain 3" style="padding:10px"></td></center>
+                    <center><td id="nihgCapt3"><input type="image" src="" alt="Nihal Girl Captain 3" style="padding:10px"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="nihbCapt4"><input type="image" src="" alt="Nihal Boy Captain 4" style="padding:10px"></td></center>
+                    <center><td id="nihgCapt4"><input type="image" src="" alt="Nihal Girl Captain 4" style="padding:10px"></td></center>
+                </tr>
+            </table>
+        </center>
+        <center><button type="submit" onclick="assignValue()">Submit</button></center>
+    </body>
+</html>
