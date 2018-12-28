@@ -1,0 +1,80 @@
+<html>
+   <head>
+       <meta charset="utf-8" />
+        <title>Sport's Captain's Page</title>
+        <style>
+        body{
+            margin: 5px;
+            border: 10px solid blue;
+            padding:10px;
+            background-color:rgb(230,230,250);
+        }
+        button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        margin:25px;
+        }
+
+        button:hover {
+        opacity: 0.8;
+        }
+        #captTable{
+            border:5px solid blue;
+        }
+        </style>
+    </head>
+    <body>
+        <center><img src="http://nafl.in/images/nafl_logo.png" width="40%" alt="NAFL"></center>
+        <center><h1 style="font-size: 60px;font-family: fantasy;color: blue;">Sport's Captain Voting Page</h1></center>
+         <center><h2 style="font-size: 40px;" id="category"><p id="firstP">&nbsp;</p></h2></center>
+        <script>
+        function showData() 
+            {
+            var theSelect = SchoolHouse.category;
+            var firstP = document.getElementById('firstP');
+            firstP.innerHTML = theSelect[theSelect.selectedIndex].text;
+            }
+        function assignValue()
+            {
+            var SpoBCapt1 = document.getElementById("spobCapt1");
+            var SpoGCapt1 = document.getElementById("spogCapt1");
+            var SpoBCapt2 = document.getElementById("spobCapt2");
+            var SpoGCapt2 = document.getElementById("spogCapt2");
+            var SpoBCapt3 = document.getElementById("spobCapt3");
+            var SpoGCapt3 = document.getElementById("spogCapt3");
+            var SpoBCapt4 = document.getElementById("spobCapt4");
+            var SpoGCapt4 = document.getElementById("spogCapt4");
+            }
+        </script>
+        <center>
+            <table style="width:50%; padding:25px;" id="captTable">
+                <tr>
+                  <th>BOYS</th>
+                  <th>GIRLS</th> 
+                </tr>
+                <tr>
+                    <center><td id="spobCapt1"><input type="image" src="" alt="Sports Boy Captain 1" style="padding:10px"></td></center>
+                    <center><td id="spogCapt1"><input type="image" src="" alt="Sports Girl Captain 1" style="padding:10px"></td></center>  
+                </tr>
+                <tr>
+                    <center><td id="spobCapt2"><input type="image" src="" alt="Sports Boy Captain 2" style="padding:10px"></td></center>
+                    <center><td id="spogCapt2"><input type="image" src="" alt="Sports Girl Captain 2" style="padding:10px"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="spobCapt3"><input type="image" src="" alt="Sports Boy Captain 3" style="padding:10px"></td></center>
+                    <center><td id="spogCapt3"><input type="image" src="" alt="Sports Girl Captain 3" style="padding:10px"></td></center>
+                </tr>
+                <tr>
+                    <center><td id="spobCapt4"><input type="image" src="" alt="Sports Boy Captain 4" style="padding:10px"></td></center>
+                    <center><td id="spogCapt4"><input type="image" src="" alt="Sports Girl Captain 4" style="padding:10px"></td></center>
+                </tr>
+            </table>
+        </center>
+        <center><button type="submit" onclick="assignValue()">Submit</button></center>
+    </body>
+</html>
