@@ -22,20 +22,34 @@ button {
     cursor: pointer;
     width: 10%;
 }
+input[type=text], input[type=password] 
+{
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px sold #ccc;
+    box-sizing: border-box;
+}
 </style>
 </head>
 <body bgcolor="#87CEEB">
+<font face = "Trebuchet MS">
 <h1><u><center>RESULTS</h1></u></center><br>
+</font>
 <br>
-           <form>
-        <h2><center><label><b>Enter house to display results</b></label></center></h2><br>
-        <center><input type="text" name="message" id="user_input"></center><br>
-      </form>
-      <center><button type="submit" onclick="assignValue()">Submit</button></center>
-      <center><h3><label>The winners of the election are: </label></center></h3>
-<div class="img">
-            <img src="http://www.pack1776.com/wp-content/uploads/2010/01/WeAreAllWinners.gif" width="20%">
-        </div>
+      <button type="submit" onclick="assignValue()">Get Results!!!!</button>
+		<hr style="height:1px;border:none;color:#333;background-color:#333;" /><br>	
+		<h3>Change Username and Password if required</h3>
+		<div class="container">
+		    <label for="uname"><b>User ID</b></label><br>
+            <input id="uName"  style="width:50%;" type="text" placeholder="Enter Username" name="uname" required><p>
+            <label for="psw"><b>Password</b></label><br>
+            <input id="pWord" style="width:50%;" type="password" placeholder="Enter Password" name="psw" required>
+            </div></br>
+			<p>
+            <button type="submit" onclick="assignValue()">Submit</button>
+            </p>
     </body>
     </html>
 </body>
