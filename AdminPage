@@ -40,12 +40,13 @@ input[type=text], input[type=password]
 <br>
       <button type="submit" onclick="assignValue()">Get Results!!!!</button>
 		<hr style="height:1px;border:none;color:#333;background-color:#333;" /><br>	
-		<h3>Change Username and Password if required</h3>
+		<h3>Change Password if required</h3>
 		<div class="container">
 		    <label for="uname"><b>User ID</b></label><br>
-            <input id="uName"  style="width:50%;" type="text" placeholder="Enter Username" name="uname" required><p>
+            <input id="uName"  style="width:50%;" type="text" placeholder="Enter User ID" name="uname" required><p>
             <label for="psw"><b>Password</b></label><br>
-            <input id="pWord" style="width:50%;" type="password" placeholder="Enter Password" name="psw" required>
+            <input id="pWord" style="width:50%;" type="password" placeholder="Enter Old Password" name="psw" required>
+            <input id="pWord" style="width:50%;" type="password" placeholder="Enter New Password" name="psw" required>
             </div></br>
 			<p>
             <button type="submit" onclick="assignValue()">Submit</button>
