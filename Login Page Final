@@ -68,7 +68,7 @@ button:hover {
         <div class="img">
             <img src="http://www.freesignprinter.com/images/printable-vote-today-sign.jpg" width="20%">
         </div>
-            <marquee><h2 style="font-size:30px;font-family: SFS, Arial, sans-serif;color: #24506C">Aspire Achieve Excel</h2></marquee>
+            <marquee behavior="alternate" scrollamount="25"><h2 style="font-size:30px;font-family: SFS, Arial, sans-serif;color: #24506C">Aspire Achieve Excel</h2></marquee>
         </p>
         <script type="text/javascript">
             function assignValue()
