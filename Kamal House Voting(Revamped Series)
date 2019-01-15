@@ -20,6 +20,7 @@
             border: 10px solid yellow;
             padding:10px;
             background-color:rgb(255, 166, 47);
+            border-radius:100px;
         }
         #pic-button
         {
