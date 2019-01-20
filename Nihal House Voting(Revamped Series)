@@ -28,6 +28,18 @@
             border:2.5px solid white;
             border-radius: 25px;
         }
+        button 
+        {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            margin:25px;
+            border-radius:25px;
+        }
         </style>
     </head>
     <body>
@@ -92,6 +104,7 @@
       <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
     </div>
   </div>
+  <center><button type="submit">Submit</button></center> 
   <marquee scrollamount="20"><h2 style="font-size:30px;font-family: SFS, Arial, sans-serif;color:white;">Aspire. Achieve. Excel.</h2></marquee>
 </div></center>
 <!-- /.container -->
