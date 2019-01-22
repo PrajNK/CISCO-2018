@@ -38,20 +38,53 @@ input[type=text], input[type=password]
 <h1><u><center>RESULTS</h1></u></center><br>
 </font>
 <br>
-      <button type="submit" onclick="assignValue()">Get Results!!!!</button>
+      <button type="submit" onclick="toggleDisplay()">Get Results!</button>
+	<div id = "resultsDiv" style = "display:none">
+		<hr style="height:1px;border:none;color:#333;background-color:#333;" />
+		<h2> Boys: </h2>
+		<b style = "color: #182FC1"> Sports </b><b>Captain: </b><br><br>
+		<b><u> House Captains: </u></b><br>
+		<b style = "color:#E8C100"> Kamal: </b><br>
+		<b style = "color:#F91A08"> Vishal: </b><br>
+		<b style = "color:#0E8508"> Nihal: </b><br>
+		<br>
+		<h2> Girls: </h2>
+		<b style = "color: #182FC1"> Sports </b><b>Captain: </b><br><br>
+		<b><u> House Captains: </u></b><br>
+		<b style = "color:#E8C100"> Kamal: </b><br>
+		<b style = "color:#F91A08"> Vishal: </b><br>
+		<b style = "color:#0E8508"> Nihal: </b><br>
+	</div>
 		<hr style="height:1px;border:none;color:#333;background-color:#333;" /><br>	
 		<h3>Change Password if required</h3>
 		<div class="container">
 		    <label for="uname"><b>User ID</b></label><br>
-            <input id="uName"  style="width:50%;" type="text" placeholder="Enter User ID" name="uname" required><p>
+            <input id="uName"  style="width:50%;" type="text" placeholder="Enter User ID" 
+
+name="uname" required><p>
             <label for="psw"><b>Password</b></label><br>
-            <input id="pWord" style="width:50%;" type="password" placeholder="Enter Old Password" name="psw" required>
-            <input id="pWord" style="width:50%;" type="password" placeholder="Enter New Password" name="psw" required>
+            <input id="pWord" style="width:50%;" type="password" placeholder="Enter Old 
+
+Password" name="psw" required>
+            <input id="pWord" style="width:50%;" type="password" placeholder="Enter New 
+
+Password" name="psw" required>
             </div></br>
 			<p>
             <button type="submit" onclick="assignValue()">Submit</button>
             </p>
     </body>
     </html>
+<script>
+	function toggleDisplay(){
+		var resDiv = document.getElementById("resultsDiv");
+		if(resDiv.style.display == "none"){
+			resDiv.style.display = "block";
+		}
+		else{
+			resDiv.style.display = "none";
+		}
+	}
+</script>
 </body>
 </html>
